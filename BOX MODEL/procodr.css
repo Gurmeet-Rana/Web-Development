@@ -1,0 +1,38 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin:0px;
+}
+.parent{
+    background-color: crimson;
+}
+.one{
+    width: 300px;
+    background-color: aquamarine;
+    padding: 25px;
+    border: 4px  solid red;
+    box-sizing: border-box;
+    margin-bottom:50px;
+    border-radius:50% ;
+}
+.two{
+    background-color: burlywood;
+    width: 300px;    
+    padding: 25px;
+    border: 4px  solid red;
+    box-sizing: border-box;
+}
+ */
+
+body{
+    margin: 0;
+} 
+p{
+    background-color: greenyellow;
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+}

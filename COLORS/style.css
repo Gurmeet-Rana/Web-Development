@@ -1,0 +1,19 @@
+body{
+    font-size: 32;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: papayawhip;
+    color: rgb(255, 67, 138);
+}
+p{
+    background-color: rgba(255,0,0,0.5);
+
+    color: #000000;
+
+    color: hsla(0, 100%, 50%, 0.494);
+ 
+}
+/* 
+WEBAIM TO CHECK VISIBILITY 
+colors.co to select colors
+*/

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body{
+    width:100%;
+}
+p{
+    font-size: 16px
+    ;
+}
+main{
+     
+    font-size:2rem;
+}
+h1{
+    border: 5px dashed red ;
+    border-radius: 10%;
+    width:50%;  
+    font-size:3rem; padding: 1em; 
+}
+p{
+    font-size: 2rem;
+    width:20ch ;
+}
+/* rem : font-size relative to the default i.e. provided by the breowser*/
+
+
+/* em: emplified
+looks relative to the element it is container in. else the root*/
+
+/* vw : viewPort Width  , horizontal scroll bar shows up in this unit 
+vh : viewPort height 
+YOU CAN DO BODY MIN-HEIGHT : 100vh TO HAVE IT ON FULL SCREEN
+
+*/

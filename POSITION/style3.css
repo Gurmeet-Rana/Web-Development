@@ -1,0 +1,40 @@
+main{
+    position: relative;
+    height: 400px;
+    width: 600px;
+    /* background-color: darkgray; */
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    /* background-color: rgba(13, 170, 170, 0.5); */
+   /*  opacity: 0.5;
+    transform: scale(1.5) ;
+    transform-origin: 100% 100%;
+
+    transform: rotate(395deg); */
+
+    /* transform: translateX(100px);
+     transform: translate(); */
+            
+     
+    /*  CENTERING THE BOX */
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     right: 50%;
+     transform: translate(-50%,-50%) rotate(45deg) scale(1.5);
+
+     box-shadow: 0px 0px 5px 10px rgba(0,0,0,0.4) ;    
+
+}
+
+/* TRANSFORM PROPERTY:
+
+BOX SHADOW : X  Y blur-radius spread-radius clr
+*/
+
+h1{
+    text-shadow: 55px 31px #ff0000 ;
+}

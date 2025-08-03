@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+ 
+p{
+     background-color: lightgray;
+    
+}
+.opposite{
+    display: inline-block;    
+    background-color: #333;
+    color: whitesmoke;
+    margin-top: 100% ;
+    height: 200%;
+    padding: 2rem;
+     
+}
+
+ul{
+    
+    list-style-type: none;
+    padding: 0.5 rem;
+    text-align: right;
+    background-color: rgb(8, 7, 7);
+    margin: 0;
+
+} 
+li{
+    display: inline-block;
+    margin-inline: 0.5rem;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    
+}
+li a:hover,li a:focus{
+    text-decoration: underline;
+}
+
+/* BLOCK ELEMENT ARE ALWAYS STACKED ON TOP OF EACH OTHER WHILE INLINE DOESNOT STACK ON TOP OF EACH OTHER 
+INLINE   */

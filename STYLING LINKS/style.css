@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+body{
+    padding: 0;
+}
+a{
+    text-decoration: underline;
+    text-decoration: none;    
+    cursor:pointer;
+    color: blue;
+
+}
+a:visited{
+    color: purple;
+}
+a:hover,a:focus{
+     
+    color: dodgerblue;
+    opacity: 0.9;    
+}
+a:active{
+    color: red;;
+}
+ 

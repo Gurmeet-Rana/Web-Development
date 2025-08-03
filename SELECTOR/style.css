@@ -1,0 +1,58 @@
+.html{   /* CLASS SELECTOR */
+    color: blue;
+}
+.css{
+    border: 3px solid black;
+    color: red;
+}
+.js{
+    color: yellow;
+}
+#html {  /* ID SELECTOR */
+    font-size: 32px;
+}
+li{
+    font-weight: 700;
+}
+/* li:first-child{
+    color: red;
+}  */
+[class]{  /* ATTRIBUTE SELECTOR */
+    background-color: whitesmoke    ;
+}
+p{
+    background-color: green;
+}
+ul p{ /*   COMBINATOR SELECTOR */
+    background-color: yellow;
+}
+
+h1:hover{   /* PSEUDO SELECTOR   */
+    background-color: orange;
+}
+/* 
+ELEMENT SELECTOR */
+body{
+    border: 5px dashed ;
+    border-radius: 30px;
+
+    background-color: pink;
+}
+*{  /* UNIVERSAL SELECTOR */
+    background-color: aliceblue;
+}
+
+h1,h2{
+    background-color: rebeccapurple;
+}
+
+/* 
+CASCADE : RULE THAT IS READ LAST IS APPLIED , BUT SPECIFIITY OVERRIDE THIS RULE 
+ELEMENT<CLASS<ID
+*/
+
+/* 
+ALSO THERE IS IF WE COMBINE TWO OR MORE ATTRIBUTES OR SELECTORS TO select THEN THEIR SPECIFICITY GETS ADDED.
+
+!Important kills the specificity AND becomes the most important . 
+ */

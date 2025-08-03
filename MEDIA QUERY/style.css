@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font: 1.5rem sans-serif;
+    min-height: 100vh;
+}
+
+/* SYNTAX OF MEDIA QUERIES
+ */
+/* @media media type and (condition : breakpoint)
+{
+    MEDIA TYPE : 3(ALL,PRINT,SCREEN)
+    //CSS RULES 
+}  */
+@media screen and (min-width:1px){
+    header{
+        color: rgb(26, 24, 24);
+        background-image: linear-gradient(to right, red, blue);
+    }
+}
