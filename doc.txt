@@ -1,0 +1,97 @@
+               CASCADING STYLE SHEETS
+It is a stylesheet language used to desc the presentation of a doc written in HTML or XML .
+- INLINE styling using style attribute 
+- INTERNAL styling using style tag .
+- EXTERNAL by writing CSS in external file and then linking it with link and rel attribute along with href . 
+
+ -> ARRANGE THESE IN ORDER OF SPECIFICITY .   
+
+   HOW HTML LOADS CSS FILE ? SERVER LOADS HTML file which make req to css file and loads it . 
+
+              BASICS- 
+1. CSS rule structure consists of a selector and a declaration block . Declarations are used to define the style prop for the selected elements . Each declaration consists of a prop and a value .    
+   TYPES OF SELECTORS : 
+   a. CLASS SELECTOR : WITH . Operator
+   b. ID SELECTOR : WITH # operator 
+   c. Pseudo SELECTOR : WITH : operator
+2. CSS SPECIFICITY : 
+3. CSS COMENTS : /* */
+4. COLORS IN CSS : {
+      RGB : 0-255
+      HEX : 00-FF
+      RGBA : A stands for opacity
+      HSL : {Hue , Saturation , Lightness} 
+              Hue : A pure Color 
+              Tint : A pure Color with just white added  
+              Shade : A pure color with just black added 
+              Tone : A pure color with just grey added 
+      HSLA : 
+   }
+5. BACKGROUND PROPERTIES : 
+{
+   background-color : sets the background color of an element 
+
+   background-image : specifies the image to be used as the background 
+
+      = url(' ')
+
+   background-position : sets the starting position of the background image
+
+   background-size : defines the size of the background image 
+
+      =cover / content / 100% 100% / left bottom etc / 
+
+   background-repeat : determines how the background image repeats
+      = no-repeat/repeat-x/repeat-y/
+
+   background-attachment : specifies if the background image scrolss with the content
+
+   background-blend-mode : difference / screen / multiply / overlay 
+
+}
+  
+      CSS UNITS  
+ Absolute Lengths             
+ 1. px  (smallest uni
+ t of length )   
+ 100%=16 px                       
+ 2. in(inches)                   
+ 3. pt(points)                
+
+Relative Lengths 
+1.em = 16px . It is calculated based on the font size of the parent element . 
+2. rem . It is based on the font size of the root (html) element . 
+3. % 
+
+   FONT PROPERTIES 
+1. FONT FAMILY - 
+2. FONT SIZE - 
+3. FONT STYLE -  like italic
+4. FONT VARIANT - 
+5. FONT WEIGHT - 
+   ADD CUSTOM FONT STYLE : @font-face rule {
+      font-family  : 
+      src:url('path') 
+   }
+   WHAT IS A FALLBACK FONT ? WHY IS IT IMP 
+   -> SO THAT TEXT REMAINS LEGIBLE ON A VARIETY OF DEVICES AND BROWSERS 
+
+   TEXT PROPERTIES : 
+1. Text alignment : 
+2. Text Decoration  :  underline , overline , none 
+3. Text Transform : uppercase, lowercase, capitalize 
+4. Text Spacing : letter-spacing , word , line-height
+5. Text Shadow : offset- x y blur-radius clr 
+   p::first-letter{
+      text-Transform:uppercase,
+
+   }
+
+   BOX MODEL : 
+  MARGIN -
+  BORDER - 
+  {
+       border : 
+  }
+  PADDING - 
+  CONTENT - 
