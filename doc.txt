@@ -87,11 +87,57 @@ Relative Lengths
 
    }
 
-   BOX MODEL : 
+            BOX MODEL : 
   MARGIN -
-  BORDER - 
+  BORDER - ARE USED TO VISUALLY SEPARATE AND VIEW THE BOUNDARIES OF AN ELEMENT 
   {
-       border : 
+       border : 2px solid blue(wd,style,clr) ; 
+
+       border-style : hidden , dotted , dashed , solid , double , groove , ridge , inset , outset 
+       border-style : hidden double dashed (top , lft and right , btm)
+
+       border-radius : 10px; 
+       border-radius: 10px 20%;(top-left & btm-right, top-right & btm-left)
+
+       border-radius: 15px 5px 10px 20px; (top-left , top-right , bottom-right , bottom-left);
   }
-  PADDING - 
+  PADDING - Used to create space around an element's content , inside of any defined borders . 
+  {
+      padding : 5px 10px; (vertical and horizontal)
+      padding: 1px 2px 2px ; (top , left and right , bottom )
+      padding : 2px 4px 3px 5px (top,right,btm,left)  
+
+      -ve Padding : 
+      padding : 
+
+      USE CASES : 
+
+      -> SPACING ELEMENTS : used to add space b/w an element's content and its border , creating separation b/w elements and a web page .
+      -> BUTTON STYLING : Used to cntrl the spacing inside buttons , making them visually appealing and comfortable to click . 
+      -> Text and Images 
+      -> Responsive desing : 
+      -> Creating Boxes and Panels :     
+
+  }
+  MARGIN - it defines the space outside the element's border . It creates separation between the element and other elements in the layout . Margin creates extra space around an element , unlike padding which creates extra space within an element. 
+  {
+      margin : mg-top mg-right mg-btm mg-left ;
+      margin : mg-top mg-rightANDmg-left mg-btm;
+      margin : mg-top&mg-btm mg-left&mg-right; 
+
+      advanced margin : 
+V.IMP::1. auto - > to horizontally center an elem within its container . This is cmly used for centering block-level elements. 
+
+
+      2. -ve margins -> to overlap elements or pull elements closer to each other . However , be cautious with -ve margins , as they can lead to unexpected layouts and should be used sparingly . 
+      3. Collapsing margin : When two adjacent margins meet , they can collapse into a single margin . This behaviour is imp. to understand , especially when dealing with elements like p and headigs . The larger of the two margins takes precedence.     
+  }
   CONTENT - 
+
+  BOX-SIZING : controls how the total widht and height of an element are calculated , including its content, padding , border . It has two possible values : content-size(default) and border-box   
+
+  Gradient : 
+  1. background-image : linear-Gradient( (to right) / 90deg , red,yellow)
+  2. 
+  3. 
+  4.  
