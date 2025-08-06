@@ -287,3 +287,97 @@ POSITION : This property in CSS is used to control the positioning of elements w
       -> Elements with position sticky are initially positioned acc to the normal flow , but they bcm sticky ad stay within the viewport once they reach a specified scroll position . You can use top , right , bottom , left properties to the stickness behaviour   
    }
 }
+
+Z-INDEX : 
+{
+   - > This property is used to control the stacking order of elements on a web page . It determines which elements should appear in front of or behind other elements when they overlap in the same space . Elements with higher z-index values are placed in front of elements with lower values of z-index .   
+} 
+Overflow : This property of CSS which is used to control how content overflows its containing element when it doesn't fit within the avl . space . It's a useful prop for handling content that exceeds its containers dimensions .  
+{
+   overflow : visible 
+   {
+
+   }
+
+   overflow : hidden 
+   {
+       
+   }
+
+   overflow : scroll 
+   {
+
+   }
+
+   overflow : auto 
+   { 
+
+   }
+}
+
+Pseudo-Elements 
+{
+   ::before 
+   {
+      -> This pseudo element is used to insert content before the content of an element . It's ofter employes to add decorative elements , icons or text before an element w/o modifying the actual HTML content . 
+
+      content : "" Attribute is must 
+        
+   }
+   ::after 
+   {
+      -> This pseudo element is used to insert content after the content of an element . It's ofter employes to add decorative elements , icons or text before an element w/o modifying the actual HTML content . 
+
+
+      content : "" Attribute is must 
+   }
+   ::first-letter{
+
+   }
+   ::first-line
+   {
+
+   }
+   ::selection 
+   {
+      -> If you slect the element 
+      background-color : #011;
+   }
+   ::placeholder
+   {
+
+   }
+}
+
+Psedu Class 
+{
+   :hover 
+   {
+
+   }
+   :first-child
+   {
+
+   }
+   :last-child
+   {
+
+   }
+   :nth-child(n)
+   {
+
+   }
+   :nth-of-type(x)
+   {
+
+   }
+   :first-of-type
+   {
+
+   }
+   :last-of-type
+   {
+
+   }
+}
+
