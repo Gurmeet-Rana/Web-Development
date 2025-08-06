@@ -249,7 +249,41 @@ DISPLAYS :
    }
 }
 
-POSITION : 
+POSITION : This property in CSS is used to control the positioning of elements within a web page  . It defines how an element should be placed relative to its normal position in the doc flow or relative to its parent or containing elements.   
 {
+   Relative : 
+   {
+       elements are positioned to their normal position in the doc flow .  
 
+       .nth-child(number): {
+         left:
+         right:
+       }
+   }
+   Absolute : 
+   {
+      position : absolute 
+      top : 50%
+      left : 50%
+      ->  element with pos abs are positioned relative to the nearest positioned ancestar or the initial containing block . 
+
+      Q. How can you ensure that an element with pos abs is potitioned relative to the entire viewport ? 
+      -> Ensure that none of its ancestors have a pos property set to relative , abs , fixed or sticky .    
+   }
+   Static : 
+   {
+      position : static 
+      -> 
+   }
+   Fixed : 
+   {
+      position : fixed 
+      -> Element are positioned relative to the viewport , so they remain in the same position even when the page is scrolled ; 
+
+   }
+   Sticky : 
+   {
+      position : sticky 
+      -> Elements with position sticky are initially positioned acc to the normal flow , but they bcm sticky ad stay within the viewport once they reach a specified scroll position . You can use top , right , bottom , left properties to the stickness behaviour   
+   }
 }
