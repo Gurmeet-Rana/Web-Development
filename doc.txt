@@ -136,8 +136,120 @@ V.IMP::1. auto - > to horizontally center an elem within its container . This is
 
   BOX-SIZING : controls how the total widht and height of an element are calculated , including its content, padding , border . It has two possible values : content-size(default) and border-box   
 
-  Gradient : 
+  Gradient : Way to create smooth transitions between two or more specified colors . They are useful in web design because they allow for the creation of visually appealing bckgrnds , btns , txt affects , enhancing the overall design and user experience  .   
+
   1. background-image : linear-Gradient( (to right) / 90deg , red,yellow)
   2. 
   3. 
   4.  
+
+  linear gradient - create a smooth transition along a st line , such as fromt top to btm .
+  Radial gradient - create a cirular transition from center outwards . 
+      
+      Repeating linear gradient : background-image : repeating-linear-gradient(45 deg,clr1,clr2,repeatAfter);
+
+      Add overlay to an image :  
+
+BOX SHADOW : 
+{
+   box-shadow : x,y,blur-raidus,density/spread, color . 
+}
+
+DROP SHADOW : 
+{
+   same as box shadow but spread is not there . 
+}
+
+FILTERS : These are a set of graphical effects that can be applied to HTML ele to modify their appearance . Filters can alter properties like clr, brightness , contrast et.   
+{
+   grayscale()
+   opacity()
+   blur()
+   contrast()
+   brightness()
+   invert()
+}
+
+LIST : 
+{
+   list-style-type: 
+   list-style-position: inside / outside 
+   list-style-image:
+   list-style-property:
+}
+
+ANCHOR :
+{
+   a:link
+   a:hover 
+   a:visited
+   a:active 
+
+   LVHA - ACCRONYM FOR LIST STLE 
+}
+
+COMBINATORS : Used to define relationships btw diff elements in your HTML doc . They 
+allow you to target elements based on their position and heirarchy.
+{ 
+   descendant selector (space) : Selects an element that is a descendant of another element.
+
+   adjacent sibling selector (+) : Selects an element that is immediately preceded by another element . 
+   child selector (>) : Selects an element that is a direct child of another element . 
+   general sibling selector (~) : Selects all element that are siblings of another element and share the same parent. 
+
+   Universal selector : Selects all elements.   
+}
+
+DISPLAYS : 
+{
+   Block Level Element   :
+   {
+      display: block 
+      -> The block value  makes the element a blck-level element. Blcok-level elements create a new blcok formatting
+      context and take up the full widht avl . They start on a new line, pushing subsequent elements below them. 
+      example : p , li , heading , container 
+
+      Vertical Stacking : They stack on top of each other , creating a vertical layout.  
+   }
+   Inline Element  :
+   {
+      display:inline 
+      -> The inline value makes the element an inline level element . Inline elements only take up as much width as necessary . And they don't create a new blcok formatting context . Inline elements can appear on the same line as other inline elements . We can't give width and heights to inline elements .  
+
+      example : links, spans, emphasis .      
+
+   } 
+   Inline - Block :
+   {
+      display:inline-block 
+      -> The inline-block value combines aspects of both block and inline . Elements with inline-block behave like inline elements but can have dimensions (width and height) and vertical alignment . 
+
+      example : Used for creating custom -styled buttons , images with captions and  
+   }   
+
+   none :
+   {
+      display : none
+   } 
+
+   How do you center an element horizontally using display:block 
+   {
+      display:block ; 
+      You can set its left and right margin as auto .    
+   }
+
+   What is the default behaviour of display:inline element with respect to margin and padding 
+   {
+      They don't respect top and bottom margins or padding , only left and right / Also width and height is not accepted.  
+   }
+   
+   How can you make an inline element like a link or a span act like a block level element ? 
+   {
+      display:block or display : inline-block 
+   }
+}
+
+POSITION : 
+{
+
+}
