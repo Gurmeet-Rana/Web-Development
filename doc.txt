@@ -381,3 +381,16 @@ Psedu Class
    }
 }
 
+Column Layout in CSS 
+{
+   column-count
+   column-gap
+   column-rule 
+   column-rule-color
+   column-rule-style
+   column-fill  
+}
+Flexbox : 
+{
+   
+}
