@@ -392,5 +392,45 @@ Column Layout in CSS
 }
 Flexbox : 
 {
-   
+   FlexBox is a 1D layout model that helps you distribute space along a single axis (either horizontally or vertically) in a flexible and efficient way . It allows you to align and distribute elements within a container making it easier to create complex layouts without using floats or positioning . 
+
+   display:flex 
+   -> this creates two axis : main and cross . And the container flows in the direction of main axis 
+
+   flex-direction : row ; (main axis is horizontal )
+   flex-direction : column ;   (main axis is vertical )
+
+   space-between : 
+
+   example # putting in center
+   {
+      .flex-container{
+         display:flex;
+         flex-direction:row;
+         justify-content:start; (horizontally)
+         align-items:start; (works vertically)
+      }
+   }
+
+   flex-items : Elements inside the flex container are called flex items .
+
+   In a flex container , one axis is considered the main axis , and the other is the cross axis . You can set the main axis to be either horizontal or vertical . 
+
+   -> If the flex-direction:row then horizontal will be main-axis 
+
+   If flex-direction:column the vertical part will be main axis and horizontal become the cross axis . 
+
+   Items display in a row (the flex-direction property's default is row ).   
+
+   flex-direction:row;
+
+   justify-content aligns flex items along the main axis . Values include flex-start,flex-end,center , space-between and space around .
+
+   Align-Items : aligns flex items along the cross axis . Values include flex-start,flex-end,center,stretch and baseline . 
+
+   flex-wrap: specifeis whether flex items should wrap to the next line when they overflow the container . 
+   Values : nowrap(default ),wrap,wrap-reverse;
+
+   aling-content:aligns multiple lines of flex items when there is extra space along axis .  
+
 }
