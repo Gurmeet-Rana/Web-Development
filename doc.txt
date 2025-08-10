@@ -390,6 +390,7 @@ Column Layout in CSS
    column-rule-style
    column-fill  
 }
+
 Flexbox : 
 {
    FlexBox is a 1D layout model that helps you distribute space along a single axis (either horizontally or vertically) in a flexible and efficient way . It allows you to align and distribute elements within a container making it easier to create complex layouts without using floats or positioning . 
@@ -399,6 +400,7 @@ Flexbox :
 
    flex-direction : row ; (main axis is horizontal )
    flex-direction : column ;   (main axis is vertical )
+   VALUES : row,row-reverse , column , column-reverse
 
    space-between : 
 
@@ -406,7 +408,7 @@ Flexbox :
    {
       .flex-container{
          display:flex;
-         flex-direction:row;
+         flex-direction:row;(main axis is row)
          justify-content:start; (horizontally)
          align-items:start; (works vertically)
       }
@@ -431,6 +433,30 @@ Flexbox :
    flex-wrap: specifeis whether flex items should wrap to the next line when they overflow the container . 
    Values : nowrap(default ),wrap,wrap-reverse;
 
-   aling-content:aligns multiple lines of flex items when there is extra space along axis .  
+   align-content:aligns multiple lines of flex items when there is extra space along axis . 
+   Values - flex-start,flex-end,center,space-between, space-around ,   
+
+   align-self - Overrides the align-items property for an individual flex item . Allows you to align a single item differently from others . 
+
+
+               Flex Item Properties (children)
+   a. order - determines the order in which a flex item appears relative to other flex items within the container. Lower values come first . 
+   b. flex-grow : Specifies how much a flex item should grow to fill available space all main axis. 
+   -> Default value is 0 , meaning it won't grow . 
+   c. flex-shrink : specifies how much a flex item should when there isn't enough space along the main axis . 
+   -> Default value is 1 meaning it will shrink . 
+   d. flex-basis : Defines the initial size of a flex item along the main axis . 
+   -> Default value is auto , which means the item's size is determined by its content.
+   e. flex(shorthand for flex-grow , flex-shrink, and flex-basis):
+   - combines the three flex item properties in one declaration .  
+
+               Alignment Properties(Self)
+   a. align-self : overrides the align-items property for an individual flex item . Allows you to align a single item differently from others .    
+
+
+}
+
+GRID : 
+{
 
 }
