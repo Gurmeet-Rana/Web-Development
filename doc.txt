@@ -632,5 +632,57 @@ TRANSFORM :
       transform : skew();
    }
 
-   TRANSFORM-ORIGIN : allows you to specify the point around which a transformation should occur . It determines the origin point for transformation functions like rotate , scale , skew , and translate . Understanding how transform-origin works is crucial for controlling the position and behaviour of transformed element ;    
+   TRANSFORM-ORIGIN : allows you to specify the point around which a transformation should occur . It determines the origin point for transformation functions like rotate , scale , skew , and translate . Understanding how transform-origin works is crucial for controlling the position and behaviour of transformed element ;   
+
+   transform-origin: left; 
 }
+
+ANIMATION 
+{
+   animation-name : Specifies the name of the keyframe animation u want to apply to an element  
+   {
+
+   }
+   animation-duration : sets the duration of the animation in s or ms 
+   {
+
+   }
+   animation-timing-function : timing-function determines the accelaration and decelaration of the animation  
+   {
+      Values : [ease,linear,ease-in,ease-out,ease-in-out]
+   }
+   animation-delay : delay before the animation starts can be in s or ms  
+   {
+
+   }
+   animation-iteration-count : sets the number of times the animation should repeat . You can use values like infinite , 3 , or 2n(for even iterations )
+   {
+      Example  
+   }
+   animation-direction : Determines whether the animation runs forward , backwards , or alternator between forward and backward cycles . 
+   {
+      Values : normal , reverse , alternate and alternate-reverse.      
+   }
+
+   @keyframes : This is not a property but a rule used to define the animation's keyframes specify how the element should look at various points during the animation .
+
+   {
+      animation-name:MyAnimationName;
+      animation-duration:3s;
+
+   }   
+
+   @keyframe MyAnimationName
+   {
+      from 
+      {
+         translate:0%;
+
+      }
+      to{
+         translate:90vw;
+         translate:calc(90vw-100px);
+      }
+   } 
+}
+
