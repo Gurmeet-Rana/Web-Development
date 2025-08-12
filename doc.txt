@@ -674,7 +674,7 @@ ANIMATION
 
    @keyframe MyAnimationName
    {
-      from 
+      from  
       {
          translate:0%;
 
@@ -683,6 +683,29 @@ ANIMATION
          translate:90vw;
          translate:calc(90vw-100px);
       }
+
+      OR 
+
+      0%
+      {
+         translate:0%;
+      }
+      50%{
+         translate:50vw 50vh;
+      }
+      100%
+      {
+         translate:calc(90vw-100px);
+      }
    } 
+
+   perspective : 1000px with rotate looks nicer.
+
+
+}
+
+CSS VARIABLES 
+{
+   
 }
 
