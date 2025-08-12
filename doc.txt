@@ -427,8 +427,10 @@ Flexbox :
    flex-direction:row;
 
    justify-content aligns flex items along the main axis . Values include flex-start,flex-end,center , space-between and space around .
+   (horizontally)
 
    Align-Items : aligns flex items along the cross axis . Values include flex-start,flex-end,center,stretch and baseline . 
+   (Vertically)
 
    flex-wrap: specifeis whether flex items should wrap to the next line when they overflow the container . 
    Values : nowrap(default ),wrap,wrap-reverse;
@@ -456,7 +458,46 @@ Flexbox :
 
 }
 
-GRID : 
+GRID : OFTEN REFERRED TO SIMPLY AS GRID , IS A 2-D LAYOUT SYSTEM IN CSS THAT ALLOWS YOU TO DESIGN COMPLEX WEB LAYOUTS WITH ROWS AND COLUMNS . IT PROVIDES A HIGHLY FLEXIBLE AND PRECISE WAY TO ARRANGE AND ALIGN CONTENT ON A WEBPAGE . 
 {
+   Grid Container and Grid Items : A grid layout consists of a grid container and its grid items . The grid container is an element that contains grid items . It's often an immediate parent element . Grid Items are the children of the grid container , and they are positioned within the grid . 
+
+    DEFINING THE GRID : 
+    -> To create a grid , you first define the cols and rows . 
+    -> Use the grid-template-columns and grid-template-rows properties to set the sizes and structure of the grid .
+    -> Cols and rows can be specified as fixed sizes(eg pixels) or flexible sizes (eg % , fractions).
+
+    GRID LINES AND TRACKS :      
+    -> Grid lines are the dividing lines between cols and rows . 
+    -> Tracks r the spaces btw grid lines where content can be placed . 
+    -> u can name grid lines and tracks for better org . 
+
+    PLACING GRID ITEMS : 
+    -> Grid Items r placed within the grid using the grid-column and grid-row properties .
+    -> You can also use the shorthand property grid-area to specify both col and row placement using the single declaration. 
+
+    EXPLICIT VS IMPLICIT GRID : 
+
+    GRID GAPS : 
+    -> Spaces btw grid items and tracks . 
+    -> U can control cols and rows separately using grid - column and grid-row-gap properties or the shorthand grid-gap . 
+
+     Grid AUTO :
+     -> Grid Items can be automatically placed using grid-auto-flow . By default , the fill rows, but u can change this behaviour to fill cols . 
+     -> grid-auto-rows and grid-auto-columns control the size of automatically placed items . 
+
+     Responsive GRIDS : 
+     -> Grid Items can be repositioned and resized automatically as the viewport size changes . 
+     -> Use media queries to adjust grid layouts for different screen sizes .
+
+     ALIGNMENT AND JUSTIFICATION : 
+     -> U can align and justify content within grid items and the grid container itsefl . 
+     -> Properties like justify-items , align-items , justify-content and align-content help u control alignment and spacing . 
+
+           {
+               display : grid ; 
+               grid-template-rows : 250px 250px ; 
+           }
+
 
 }
