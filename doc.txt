@@ -587,8 +587,50 @@ TRANSITIONS :
       transition-duration:1s;
       transition-timing-function:ease-in-out/linear;
       transition-delay : 2s;
-       
 
+      on parent
+      {
+         transition : all function delay;
+      }
+       
    }
 
+   transform : translateX/Y(90vw,0);
+
+
+
+}
+
+TRANSFORM : 
+{
+   transform : translate()
+   {
+      translate3d(),translateX(),translateY()
+
+      or 
+      translate: x y ; 
+
+   }
+   transform : scale()
+   {
+      scaleX(),scaleY();
+
+      scale: 2 ; 
+      or 
+      transform : scale(2);
+   }
+   transform:rotate()
+   {
+      rotate(90deg);
+      rotateX();
+      rotateY();
+      rotate3d();
+      rotateZ();
+   }
+   transform:skew()
+   {
+      transform : skew();
+   }
+
+   TRANSFORM-ORIGIN : allows you to specify the point around which a transformation should occur . It determines the origin point for transformation functions like rotate , scale , skew , and translate . Understanding how transform-origin works is crucial for controlling the position and behaviour of transformed element ;    
 }
