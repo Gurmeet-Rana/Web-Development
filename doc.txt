@@ -497,7 +497,98 @@ GRID : OFTEN REFERRED TO SIMPLY AS GRID , IS A 2-D LAYOUT SYSTEM IN CSS THAT ALL
            {
                display : grid ; 
                grid-template-rows : 250px 250px ; 
+               grid-template-columns: 250px 250px 1fr;
+               grid-template-columns: 1fr 1fr 1fr;
+               grid-template-columns : repeat(how_many,eachspace); ex repeat(3,1fr);
+
+               grid-row-gap: 50px  ; 
+               or
+               row-gap:50px;
+
+               grid-columns-gap:50px ; 
+               or 
+               column-gap: 50px; 
+
+               gap : 50px; 
+
+               
            }
 
+           .items1{
+            grid-row-start=x1;
+            grid-row-end=x2;
+                  or 
+            grid-row=x1/x2;
+
+
+            grid-column-start=y1;
+            grid-column-end=y2;
+
+                  or 
+            grid-column : y1/y2;
+
+            grid-area : x1/x2/y1/y2;
+
+            //We can implement colspan with these properties => Explicit Vs Implicit Grid 
+
+            grid-auto-rows : 250px; 
+
+            aling-items : center ; 
+            align-teims : self-start/self-end;
+            align-items : stretch ; 
+
+            justify-items : self-start/self-end;
+            justify-items : center ; 
+            justify-items : end/stretch;  
+            
+            grid-template-columns : 1fr min-content max-content ; 
+            
+            grid-template-columns : minmax(250px,300px);
+            
+            //RESPONSIVE GRID  
+            grid-template-columns : minmax(auto-fill,minmax(250px,1fr));
+             
+
+           }
+
+
+}
+
+TRANSITIONS : 
+{
+   1. transition-property  : Specifies which properties should be transitioned .
+   Example : Transition the clr and background-color properties 
+   .element{
+      transition-property:color , background-color ; 
+
+   }
+   2. transition-timing-function : specifies the timing curve used for the transition 
+   .element{
+      transition-timing-function:ease-in-out;
+   }
+
+
+   3. transition-duration : Defines how long the transition should take to complete
+   .element{
+      transition-duration : 1s;
+      It accepts s and ms values too  
+   } 
+
+   4. transition-delay : Sets a delay before the transition starts  
+   Example : Starting the transition after 0.5 seconds ; 
+
+
+   SHORTHAND : 
+   (property name | duration | easing function | delay )
+   transition : margin-right 4s ease-in-out 1s;
+
+   {
+      transition-property:width;
+      transition-duration:1s;
+      transition-timing-function:ease-in-out/linear;
+      transition-delay : 2s;
+       
+
+   }
 
 }
