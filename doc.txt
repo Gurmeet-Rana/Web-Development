@@ -52,9 +52,7 @@ It is a stylesheet language used to desc the presentation of a doc written in HT
   
       CSS UNITS  
  Absolute Lengths             
- 1. px  (smallest uni
- t of length )   
- 100%=16 px                       
+ 1. px  (smallest unit of length )  100%=16 px                       
  2. in(inches)                   
  3. pt(points)                
 
@@ -723,14 +721,14 @@ CSS VARIABLES : Also known as CSS custom properties , allow you to define reusab
 
 SELECTOR
 {
-   *
+   * 
 
    ELEMENT/Pseudo-Elemet
 }
 
 SPECIFICITY 
 {
-
+   * , Element-Pseudo element , class or pseudo class , id , inline style , !important
 }
 
 NEW CSS FEATURES 
@@ -746,8 +744,13 @@ NEW CSS FEATURES
    Gap property for flexbox ,
    CSS Logical Properties (inline and block),
    {
-      The border-inline CSS property is a shorthand property for setting the individual Logical block border property values in a single place in the 
+      The border-inline CSS property is a shorthand property for setting the individual Logical block border property values in a single place in the style sheet . 
+      The border-block CSS property is a shorthand property for setting the individual Logical block border property values in a single place in the style sheet . 
    }
    CSS Writing mode , 
    :focus-visible 
+
+   CSS Nesting : CSS Nesting Module defines a syntax for nesting selectors , providing the ability to nest one style rule inside another , with the selector of the child rule relative to the selector of the parent rule . 
+
+   
 }
