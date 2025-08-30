@@ -1,5 +1,5 @@
                CASCADING STYLE SHEETS
-It is a stylesheet language used to desc the presentation of a doc written in HTML or XML .
+It is a stylesheet language used to desc the presentation of a doc written in HTML or XML . It was created by a grup of indv k/w as WWW Consortium(W3C).
 - INLINE styling using style attribute 
 - INTERNAL styling using style tag .
 - EXTERNAL by writing CSS in external file and then linking it with link and rel attribute along with href . 
@@ -26,6 +26,8 @@ It is a stylesheet language used to desc the presentation of a doc written in HT
               Shade : A pure color with just black added 
               Tone : A pure color with just grey added 
       HSLA : 
+
+      color:transparent /  to disappear
    }
 5. BACKGROUND PROPERTIES : 
 {
@@ -35,7 +37,7 @@ It is a stylesheet language used to desc the presentation of a doc written in HT
 
       = url(' ')
 
-   background-position : sets the starting position of the background image
+   background-position : sets the starting position of the background image : left bottom 
 
    background-size : defines the size of the background image 
 
@@ -44,7 +46,7 @@ It is a stylesheet language used to desc the presentation of a doc written in HT
    background-repeat : determines how the background image repeats
       = no-repeat/repeat-x/repeat-y/
 
-   background-attachment : specifies if the background image scrolss with the content
+   background-attachment : specifies if the background image scrols with the content : fixed , local , store
 
    background-blend-mode : difference / screen / multiply / overlay 
 
@@ -52,7 +54,7 @@ It is a stylesheet language used to desc the presentation of a doc written in HT
   
       CSS UNITS  
  Absolute Lengths             
- 1. px  (smallest unit of length )  100%=16 px                       
+ 1. px  (smallest unit of length )  100%=16 px , 1px=6.25%                    
  2. in(inches)                   
  3. pt(points)                
 
@@ -77,6 +79,11 @@ Relative Lengths
    TEXT PROPERTIES : 
 1. Text alignment : 
 2. Text Decoration  :  underline , overline , none 
+   text-decoration-line:
+   text-decoration-color:
+   text-decoration-style:
+   text-decoration-thickness:
+
 3. Text Transform : uppercase, lowercase, capitalize 
 4. Text Spacing : letter-spacing , word , line-height
 5. Text Shadow : offset- x y blur-radius clr 
@@ -92,6 +99,7 @@ Relative Lengths
        border : 2px solid blue(wd,style,clr) ; 
 
        border-style : hidden , dotted , dashed , solid , double , groove , ridge , inset , outset 
+
        border-style : hidden double dashed (top , lft and right , btm)
 
        border-radius : 10px; 
@@ -113,14 +121,14 @@ Relative Lengths
       -> SPACING ELEMENTS : used to add space b/w an element's content and its border , creating separation b/w elements and a web page .
       -> BUTTON STYLING : Used to cntrl the spacing inside buttons , making them visually appealing and comfortable to click . 
       -> Text and Images 
-      -> Responsive desing : 
+      -> Responsive design : 
       -> Creating Boxes and Panels :     
 
   }
   MARGIN - it defines the space outside the element's border . It creates separation between the element and other elements in the layout . Margin creates extra space around an element , unlike padding which creates extra space within an element. 
   {
       margin : mg-top mg-right mg-btm mg-left ;
-      margin : mg-top mg-rightANDmg-left mg-btm;
+      margin : mg-top mg-right AND mg-left mg-btm;
       margin : mg-top&mg-btm mg-left&mg-right; 
 
       advanced margin : 
@@ -130,6 +138,8 @@ V.IMP::1. auto - > to horizontally center an elem within its container . This is
       2. -ve margins -> to overlap elements or pull elements closer to each other . However , be cautious with -ve margins , as they can lead to unexpected layouts and should be used sparingly . 
       3. Collapsing margin : When two adjacent margins meet , they can collapse into a single margin . This behaviour is imp. to understand , especially when dealing with elements like p and headigs . The larger of the two margins takes precedence.     
   }
+
+  width=content+padding+border+margin
   CONTENT - 
 
   BOX-SIZING : controls how the total widht and height of an element are calculated , including its content, padding , border . It has two possible values : content-size(default) and border-box   
@@ -142,6 +152,7 @@ V.IMP::1. auto - > to horizontally center an elem within its container . This is
   4.  
 
   linear gradient - create a smooth transition along a st line , such as fromt top to btm .
+
   Radial gradient - create a cirular transition from center outwards . 
       
       Repeating linear gradient : background-image : repeating-linear-gradient(45 deg,clr1,clr2,repeatAfter);
@@ -150,7 +161,7 @@ V.IMP::1. auto - > to horizontally center an elem within its container . This is
 
 BOX SHADOW : 
 {
-   box-shadow : x,y,blur-raidus,density/spread, color . 
+   box-shadow : x,y,blur-radius,density/spread, color . 
 }
 
 DROP SHADOW : 
@@ -160,7 +171,8 @@ DROP SHADOW :
 
 FILTERS : These are a set of graphical effects that can be applied to HTML ele to modify their appearance . Filters can alter properties like clr, brightness , contrast et.   
 {
-   grayscale()
+   -webkit-filter : Values below
+   grayscale() - black and white 
    opacity()
    blur()
    contrast()
@@ -172,8 +184,7 @@ LIST :
 {
    list-style-type: 
    list-style-position: inside / outside 
-   list-style-image:
-   list-style-property:
+   list-style-image: url('')   list-style-property:
 }
 
 ANCHOR :
@@ -383,7 +394,7 @@ Column Layout in CSS
 {
    column-count
    column-gap
-   column-rule 
+   column-rule : style width color; // of the line drawn between the columns in multicolumn layout 
    column-rule-color
    column-rule-style
    column-fill  
@@ -544,12 +555,9 @@ GRID : OFTEN REFERRED TO SIMPLY AS GRID , IS A 2-D LAYOUT SYSTEM IN CSS THAT ALL
             grid-template-columns : minmax(250px,300px);
             
             //RESPONSIVE GRID  
-            grid-template-columns : minmax(auto-fill,minmax(250px,1fr));
-             
+            grid-template-columns : minmax(auto-fill,minmax(250px,1fr));           
 
            }
-
-
 }
 
 TRANSITIONS : 
@@ -575,7 +583,6 @@ TRANSITIONS :
    4. transition-delay : Sets a delay before the transition starts  
    Example : Starting the transition after 0.5 seconds ; 
 
-
    SHORTHAND : 
    (property name | duration | easing function | delay )
    transition : margin-right 4s ease-in-out 1s;
@@ -595,8 +602,6 @@ TRANSITIONS :
 
    transform : translateX/Y(90vw,0);
 
-
-
 }
 
 TRANSFORM : 
@@ -604,7 +609,6 @@ TRANSFORM :
    transform : translate()
    {
       translate3d(),translateX(),translateY()
-
       or 
       translate: x y ; 
 
