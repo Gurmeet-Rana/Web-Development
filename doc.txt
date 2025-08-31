@@ -394,7 +394,7 @@ Column Layout in CSS
 {
    column-count
    column-gap
-   column-rule : style width color; // of the line drawn between the columns in multicolumn layout 
+column-rule:style width color;//of the line drawn b/w the columns in multicolumn layout 
    column-rule-color
    column-rule-style
    column-fill  
@@ -427,7 +427,7 @@ Flexbox :
 
    In a flex container , one axis is considered the main axis , and the other is the cross axis . You can set the main axis to be either horizontal or vertical . 
 
-   -> If the flex-direction:row then horizontal will be main-axis 
+   -> If the flex-direction:row then horizontal will be main-axis .
 
    If flex-direction:column the vertical part will be main axis and horizontal become the cross axis . 
 
@@ -469,7 +469,7 @@ Flexbox :
 
 GRID : OFTEN REFERRED TO SIMPLY AS GRID , IS A 2-D LAYOUT SYSTEM IN CSS THAT ALLOWS YOU TO DESIGN COMPLEX WEB LAYOUTS WITH ROWS AND COLUMNS . IT PROVIDES A HIGHLY FLEXIBLE AND PRECISE WAY TO ARRANGE AND ALIGN CONTENT ON A WEBPAGE . 
 {
-   Grid Container and Grid Items : A grid layout consists of a grid container and its grid items . The grid container is an element that contains grid items . It's often an immediate parent element . Grid Items are the children of the grid container , and they are positioned within the grid . 
+   Grid Container and Grid Items : A grid layout consists of a grid container and its grid items.The grid container is an element that contains grid items.It's often an immediate parent element .Grid Items are the children of the grid container,and they are positioned within the grid . 
 
     DEFINING THE GRID : 
     -> To create a grid , you first define the cols and rows . 
@@ -489,7 +489,7 @@ GRID : OFTEN REFERRED TO SIMPLY AS GRID , IS A 2-D LAYOUT SYSTEM IN CSS THAT ALL
 
     GRID GAPS : 
     -> Spaces btw grid items and tracks . 
-    -> U can control cols and rows separately using grid - column and grid-row-gap properties or the shorthand grid-gap . 
+    -> U can control cols and rows separately using grid-column and grid-row-gap properties or the shorthand grid-gap . 
 
      Grid AUTO :
      -> Grid Items can be automatically placed using grid-auto-flow . By default , the fill rows, but u can change this behaviour to fill cols . 
@@ -500,7 +500,7 @@ GRID : OFTEN REFERRED TO SIMPLY AS GRID , IS A 2-D LAYOUT SYSTEM IN CSS THAT ALL
      -> Use media queries to adjust grid layouts for different screen sizes .
 
      ALIGNMENT AND JUSTIFICATION : 
-     -> U can align and justify content within grid items and the grid container itsefl . 
+     -> U can align and justify content within grid items and the grid container itself . 
      -> Properties like justify-items , align-items , justify-content and align-content help u control alignment and spacing . 
 
            {
@@ -543,10 +543,10 @@ GRID : OFTEN REFERRED TO SIMPLY AS GRID , IS A 2-D LAYOUT SYSTEM IN CSS THAT ALL
             grid-auto-rows : 250px; 
 
             aling-items : center ; 
-            align-teims : self-start/self-end;
+            align-items : self-start/self-end;
             align-items : stretch ; 
 
-            justify-items : self-start/self-end;
+            justify-items : self-start/self-end; 
             justify-items : center ; 
             justify-items : end/stretch;  
             
@@ -584,11 +584,11 @@ TRANSITIONS :
    Example : Starting the transition after 0.5 seconds ; 
 
    SHORTHAND : 
-   (property name | duration | easing function | delay )
+   (property name | duration | easing function | delay ) 
    transition : margin-right 4s ease-in-out 1s;
 
    {
-      transition-property:width;
+      transition-property:width; 
       transition-duration:1s;
       transition-timing-function:ease-in-out/linear;
       transition-delay : 2s;
@@ -601,6 +601,14 @@ TRANSITIONS :
    }
 
    transform : translateX/Y(90vw,0);
+
+   eg - THE IMAGE SHOULD GROW WHEN HOVERED 
+   img{
+      transition:scale 2s linear .5s ; 
+   }
+   img:hover{
+      scale:1.2;
+   }
 
 }
 
